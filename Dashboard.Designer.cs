@@ -35,7 +35,9 @@
             tabPage4 = new TabPage();
             tabPage5 = new TabPage();
             tabPage6 = new TabPage();
+            materialCard1 = new MaterialSkin.Controls.MaterialCard();
             materialTabControl1.SuspendLayout();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // materialTabControl1
@@ -68,6 +70,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(materialCard1);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -116,6 +119,19 @@
             tabPage6.Text = "tabPage6";
             tabPage6.UseVisualStyleBackColor = true;
             // 
+            // materialCard1
+            // 
+            materialCard1.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard1.Depth = 0;
+            materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            materialCard1.Location = new Point(194, 91);
+            materialCard1.Margin = new Padding(14);
+            materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialCard1.Name = "materialCard1";
+            materialCard1.Padding = new Padding(14);
+            materialCard1.Size = new Size(200, 100);
+            materialCard1.TabIndex = 0;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -126,6 +142,7 @@
             Name = "Dashboard";
             Text = "Dashboard";
             materialTabControl1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -138,5 +155,6 @@
         private TabPage tabPage4;
         private TabPage tabPage5;
         private TabPage tabPage6;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
     }
 }

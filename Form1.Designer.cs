@@ -48,7 +48,7 @@
             tbxPasskey.MaxLength = 32767;
             tbxPasskey.MouseState = MaterialSkin.MouseState.OUT;
             tbxPasskey.Name = "tbxPasskey";
-            tbxPasskey.PasswordChar = '\0';
+            tbxPasskey.PasswordChar = '●';
             tbxPasskey.PrefixSuffixText = null;
             tbxPasskey.ReadOnly = false;
             tbxPasskey.RightToLeft = RightToLeft.No;
@@ -61,7 +61,7 @@
             tbxPasskey.TabStop = false;
             tbxPasskey.TextAlign = HorizontalAlignment.Left;
             tbxPasskey.TrailingIcon = null;
-            tbxPasskey.UseSystemPasswordChar = false;
+            tbxPasskey.UseSystemPasswordChar = true;
             // 
             // materialLabel1
             // 
