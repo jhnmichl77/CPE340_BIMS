@@ -38,11 +38,20 @@
             tabPage6 = new TabPage();
             materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             materialListBox1 = new MaterialSkin.Controls.MaterialListBox();
             materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            textBox1 = new TextBox();
+            materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
+            materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
+            materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
+            materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
+            materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
+            materialListBox2 = new MaterialSkin.Controls.MaterialListBox();
+            materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
+            materialListBox3 = new MaterialSkin.Controls.MaterialListBox();
+            materialTextBox9 = new MaterialSkin.Controls.MaterialTextBox();
+            materialListBox4 = new MaterialSkin.Controls.MaterialListBox();
+            materialTextBox10 = new MaterialSkin.Controls.MaterialTextBox();
+            materialListBox5 = new MaterialSkin.Controls.MaterialListBox();
             materialTabControl1.SuspendLayout();
             Resident.SuspendLayout();
             SuspendLayout();
@@ -68,11 +77,20 @@
             // 
             // Resident
             // 
-            Resident.Controls.Add(textBox1);
+            Resident.Controls.Add(materialListBox5);
+            Resident.Controls.Add(materialTextBox10);
+            Resident.Controls.Add(materialListBox4);
+            Resident.Controls.Add(materialTextBox9);
+            Resident.Controls.Add(materialListBox3);
+            Resident.Controls.Add(materialTextBox8);
+            Resident.Controls.Add(materialListBox2);
+            Resident.Controls.Add(materialTextBox7);
+            Resident.Controls.Add(materialTextBox6);
+            Resident.Controls.Add(materialTextBox5);
+            Resident.Controls.Add(materialTextBox4);
+            Resident.Controls.Add(materialDivider2);
             Resident.Controls.Add(materialTextBox3);
             Resident.Controls.Add(materialListBox1);
-            Resident.Controls.Add(materialLabel2);
-            Resident.Controls.Add(materialLabel1);
             Resident.Controls.Add(materialTextBox1);
             Resident.Controls.Add(materialDivider1);
             Resident.Controls.Add(materialTextBox2);
@@ -84,6 +102,7 @@
             Resident.TabIndex = 0;
             Resident.Text = "Resident";
             Resident.UseVisualStyleBackColor = true;
+            Resident.Click += this.Resident_Click;
             // 
             // materialTextBox2
             // 
@@ -91,6 +110,7 @@
             materialTextBox2.BorderStyle = BorderStyle.None;
             materialTextBox2.Depth = 0;
             materialTextBox2.Font = new Font("Microsoft Sans Serif", 9.6F);
+            materialTextBox2.ForeColor = SystemColors.HotTrack;
             materialTextBox2.LeadingIcon = null;
             materialTextBox2.Location = new Point(360, 7);
             materialTextBox2.MaxLength = 50;
@@ -159,12 +179,12 @@
             // 
             // materialDivider1
             // 
-            materialDivider1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            materialDivider1.BackColor = Color.LightSteelBlue;
             materialDivider1.Depth = 0;
-            materialDivider1.Location = new Point(3, 63);
+            materialDivider1.Location = new Point(-4, 63);
             materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             materialDivider1.Name = "materialDivider1";
-            materialDivider1.Size = new Size(901, 40);
+            materialDivider1.Size = new Size(908, 40);
             materialDivider1.TabIndex = 3;
             materialDivider1.Text = "materialDivider1";
             // 
@@ -185,30 +205,6 @@
             materialTextBox1.Text = "Resident ID:";
             materialTextBox1.TrailingIcon = null;
             // 
-            // materialLabel1
-            // 
-            materialLabel1.AutoSize = true;
-            materialLabel1.Depth = 0;
-            materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel1.Location = new Point(790, 74);
-            materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            materialLabel1.Name = "materialLabel1";
-            materialLabel1.Size = new Size(107, 19);
-            materialLabel1.TabIndex = 5;
-            materialLabel1.Text = "materialLabel1";
-            // 
-            // materialLabel2
-            // 
-            materialLabel2.AutoSize = true;
-            materialLabel2.Depth = 0;
-            materialLabel2.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel2.Location = new Point(6, 74);
-            materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            materialLabel2.Name = "materialLabel2";
-            materialLabel2.Size = new Size(107, 19);
-            materialLabel2.TabIndex = 6;
-            materialLabel2.Text = "materialLabel2";
-            // 
             // materialListBox1
             // 
             materialListBox1.BackColor = Color.White;
@@ -220,7 +216,7 @@
             materialListBox1.Name = "materialListBox1";
             materialListBox1.SelectedIndex = -1;
             materialListBox1.SelectedItem = null;
-            materialListBox1.Size = new Size(141, 50);
+            materialListBox1.Size = new Size(770, 50);
             materialListBox1.TabIndex = 7;
             // 
             // materialTextBox3
@@ -230,22 +226,206 @@
             materialTextBox3.Depth = 0;
             materialTextBox3.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox3.LeadingIcon = null;
-            materialTextBox3.Location = new Point(6, 165);
+            materialTextBox3.Location = new Point(6, 181);
             materialTextBox3.MaxLength = 50;
             materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox3.Multiline = false;
             materialTextBox3.Name = "materialTextBox3";
-            materialTextBox3.Size = new Size(107, 50);
+            materialTextBox3.Size = new Size(112, 50);
             materialTextBox3.TabIndex = 8;
             materialTextBox3.Text = "Name:";
             materialTextBox3.TrailingIcon = null;
             // 
-            // textBox1
+            // materialDivider2
             // 
-            textBox1.Location = new Point(124, 179);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(167, 27);
-            textBox1.TabIndex = 9;
+            materialDivider2.BackColor = Color.RoyalBlue;
+            materialDivider2.Depth = 0;
+            materialDivider2.Location = new Point(0, 74);
+            materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialDivider2.Name = "materialDivider2";
+            materialDivider2.Size = new Size(901, 19);
+            materialDivider2.TabIndex = 10;
+            materialDivider2.Text = "materialDivider2";
+            // 
+            // materialTextBox4
+            // 
+            materialTextBox4.AnimateReadOnly = false;
+            materialTextBox4.BorderStyle = BorderStyle.None;
+            materialTextBox4.Depth = 0;
+            materialTextBox4.Font = new Font("Microsoft Sans Serif", 9.6F);
+            materialTextBox4.ForeColor = SystemColors.HotTrack;
+            materialTextBox4.LeadingIcon = null;
+            materialTextBox4.Location = new Point(542, 7);
+            materialTextBox4.MaxLength = 50;
+            materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox4.Multiline = false;
+            materialTextBox4.Name = "materialTextBox4";
+            materialTextBox4.Size = new Size(187, 50);
+            materialTextBox4.TabIndex = 11;
+            materialTextBox4.Text = "";
+            materialTextBox4.TrailingIcon = null;
+            materialTextBox4.TextChanged += materialTextBox4_TextChanged;
+            // 
+            // materialTextBox5
+            // 
+            materialTextBox5.AnimateReadOnly = false;
+            materialTextBox5.BorderStyle = BorderStyle.None;
+            materialTextBox5.Depth = 0;
+            materialTextBox5.Font = new Font("Microsoft Sans Serif", 9.6F);
+            materialTextBox5.ForeColor = SystemColors.HotTrack;
+            materialTextBox5.LeadingIcon = null;
+            materialTextBox5.Location = new Point(717, 7);
+            materialTextBox5.MaxLength = 50;
+            materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox5.Multiline = false;
+            materialTextBox5.Name = "materialTextBox5";
+            materialTextBox5.Size = new Size(187, 50);
+            materialTextBox5.TabIndex = 12;
+            materialTextBox5.Text = "";
+            materialTextBox5.TrailingIcon = null;
+            // 
+            // materialTextBox6
+            // 
+            materialTextBox6.AnimateReadOnly = false;
+            materialTextBox6.BorderStyle = BorderStyle.None;
+            materialTextBox6.Depth = 0;
+            materialTextBox6.Font = new Font("Microsoft Sans Serif", 9.6F);
+            materialTextBox6.ForeColor = SystemColors.HotTrack;
+            materialTextBox6.LeadingIcon = null;
+            materialTextBox6.Location = new Point(177, 7);
+            materialTextBox6.MaxLength = 50;
+            materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox6.Multiline = false;
+            materialTextBox6.Name = "materialTextBox6";
+            materialTextBox6.Size = new Size(187, 50);
+            materialTextBox6.TabIndex = 13;
+            materialTextBox6.Text = "";
+            materialTextBox6.TrailingIcon = null;
+            // 
+            // materialTextBox7
+            // 
+            materialTextBox7.AnimateReadOnly = false;
+            materialTextBox7.BorderStyle = BorderStyle.None;
+            materialTextBox7.Depth = 0;
+            materialTextBox7.Font = new Font("Microsoft Sans Serif", 9.6F);
+            materialTextBox7.ForeColor = SystemColors.HotTrack;
+            materialTextBox7.LeadingIcon = null;
+            materialTextBox7.Location = new Point(-4, 7);
+            materialTextBox7.MaxLength = 50;
+            materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox7.Multiline = false;
+            materialTextBox7.Name = "materialTextBox7";
+            materialTextBox7.Size = new Size(187, 50);
+            materialTextBox7.TabIndex = 14;
+            materialTextBox7.Text = "";
+            materialTextBox7.TrailingIcon = null;
+            // 
+            // materialListBox2
+            // 
+            materialListBox2.BackColor = Color.White;
+            materialListBox2.BorderColor = Color.LightGray;
+            materialListBox2.Depth = 0;
+            materialListBox2.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialListBox2.Location = new Point(124, 181);
+            materialListBox2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialListBox2.Name = "materialListBox2";
+            materialListBox2.SelectedIndex = -1;
+            materialListBox2.SelectedItem = null;
+            materialListBox2.Size = new Size(770, 50);
+            materialListBox2.TabIndex = 15;
+            // 
+            // materialTextBox8
+            // 
+            materialTextBox8.AnimateReadOnly = false;
+            materialTextBox8.BorderStyle = BorderStyle.None;
+            materialTextBox8.Depth = 0;
+            materialTextBox8.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBox8.LeadingIcon = null;
+            materialTextBox8.Location = new Point(6, 260);
+            materialTextBox8.MaxLength = 50;
+            materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox8.Multiline = false;
+            materialTextBox8.Name = "materialTextBox8";
+            materialTextBox8.Size = new Size(112, 50);
+            materialTextBox8.TabIndex = 16;
+            materialTextBox8.Text = "Age:";
+            materialTextBox8.TrailingIcon = null;
+            // 
+            // materialListBox3
+            // 
+            materialListBox3.BackColor = Color.White;
+            materialListBox3.BorderColor = Color.LightGray;
+            materialListBox3.Depth = 0;
+            materialListBox3.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialListBox3.Location = new Point(124, 260);
+            materialListBox3.MouseState = MaterialSkin.MouseState.HOVER;
+            materialListBox3.Name = "materialListBox3";
+            materialListBox3.SelectedIndex = -1;
+            materialListBox3.SelectedItem = null;
+            materialListBox3.Size = new Size(770, 50);
+            materialListBox3.TabIndex = 18;
+            // 
+            // materialTextBox9
+            // 
+            materialTextBox9.AnimateReadOnly = false;
+            materialTextBox9.BorderStyle = BorderStyle.None;
+            materialTextBox9.Depth = 0;
+            materialTextBox9.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBox9.LeadingIcon = null;
+            materialTextBox9.Location = new Point(6, 343);
+            materialTextBox9.MaxLength = 50;
+            materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox9.Multiline = false;
+            materialTextBox9.Name = "materialTextBox9";
+            materialTextBox9.Size = new Size(112, 50);
+            materialTextBox9.TabIndex = 19;
+            materialTextBox9.Text = "Birthdate:";
+            materialTextBox9.TrailingIcon = null;
+            // 
+            // materialListBox4
+            // 
+            materialListBox4.BackColor = Color.White;
+            materialListBox4.BorderColor = Color.LightGray;
+            materialListBox4.Depth = 0;
+            materialListBox4.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialListBox4.Location = new Point(124, 343);
+            materialListBox4.MouseState = MaterialSkin.MouseState.HOVER;
+            materialListBox4.Name = "materialListBox4";
+            materialListBox4.SelectedIndex = -1;
+            materialListBox4.SelectedItem = null;
+            materialListBox4.Size = new Size(770, 50);
+            materialListBox4.TabIndex = 20;
+            // 
+            // materialTextBox10
+            // 
+            materialTextBox10.AnimateReadOnly = false;
+            materialTextBox10.BorderStyle = BorderStyle.None;
+            materialTextBox10.Depth = 0;
+            materialTextBox10.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBox10.LeadingIcon = null;
+            materialTextBox10.Location = new Point(6, 421);
+            materialTextBox10.MaxLength = 50;
+            materialTextBox10.MouseState = MaterialSkin.MouseState.OUT;
+            materialTextBox10.Multiline = false;
+            materialTextBox10.Name = "materialTextBox10";
+            materialTextBox10.Size = new Size(112, 50);
+            materialTextBox10.TabIndex = 21;
+            materialTextBox10.Text = "Text:";
+            materialTextBox10.TrailingIcon = null;
+            // 
+            // materialListBox5
+            // 
+            materialListBox5.BackColor = Color.White;
+            materialListBox5.BorderColor = Color.LightGray;
+            materialListBox5.Depth = 0;
+            materialListBox5.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialListBox5.Location = new Point(124, 421);
+            materialListBox5.MouseState = MaterialSkin.MouseState.HOVER;
+            materialListBox5.Name = "materialListBox5";
+            materialListBox5.SelectedIndex = -1;
+            materialListBox5.SelectedItem = null;
+            materialListBox5.Size = new Size(770, 50);
+            materialListBox5.TabIndex = 22;
             // 
             // Dashboard
             // 
@@ -261,7 +441,6 @@
             Load += Dashboard_Load;
             materialTabControl1.ResumeLayout(false);
             Resident.ResumeLayout(false);
-            Resident.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -278,9 +457,18 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
         private MaterialSkin.Controls.MaterialListBox materialListBox1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private TextBox textBox1;
+        private MaterialSkin.Controls.MaterialDivider materialDivider2;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
+        private MaterialSkin.Controls.MaterialListBox materialListBox2;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox7;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox6;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
+        private MaterialSkin.Controls.MaterialListBox materialListBox5;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox10;
+        private MaterialSkin.Controls.MaterialListBox materialListBox4;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox9;
+        private MaterialSkin.Controls.MaterialListBox materialListBox3;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox8;
     }
 }
