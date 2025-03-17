@@ -8,11 +8,14 @@ namespace CPE340_BIMS
         public Form1()
         {
             InitializeComponent();
+            Shared.Set(this);
+        }
 
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green200, Primary.Green700, Primary.LightGreen100,  Accent.LightGreen200, TextShade.WHITE);
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
     }
 }
